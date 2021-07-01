@@ -8,14 +8,17 @@
 <script>
 
     function giaiphuongtrinh(a, b) {
-        return -b / a;
+        if (a === 0) {
+            return 'Phuong trinh co vo so nghiem';
+        } else if (a !== 0) {
+            return -b / a;
+        }
     }
 
     let num1 = 5;
     let num2 = 8;
     let result = giaiphuongtrinh(num1, num2);
     console.log(result);
-
 
 </script>
 
