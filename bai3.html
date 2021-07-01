@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function vowelsSearching(str) {
+        let array = str.split('')
+        let count = 0;
+        let check = true;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === 'a' || array[i] === 'o' || array[i] === 'e' || array[i] === 'u' || array[i] === 'i') {
+                count++
+            }
+            else if (array[i] !== 'a' && array[i] !== 'o' && array[i] !== 'e' && array[i] !== 'u' && array[i] !== 'i') {
+                check = false;
+            }
+        }
+        console.log(count);
+        console.log(check);
+    }
+
+    let string = prompt('nhap vao day');
+    vowelsSearching(string);
+
+</script>
+</body>
+</html>
